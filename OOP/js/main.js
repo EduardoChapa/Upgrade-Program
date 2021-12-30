@@ -38,4 +38,5 @@ Employee.prototype.boss = 'John'
 console.log(Employee.prototype);
 
 
+
 //var emp = new Employee('Anne', 24, 40000, 'NYC')
