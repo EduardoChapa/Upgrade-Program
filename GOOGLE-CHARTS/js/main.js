@@ -36,24 +36,7 @@ class PieChart extends HTMLElement {
         .then(res => this.setData(res))
         .then(res => {
             google.charts.load('current', {packages: ['corechart']});
-            google.charts.setOnLoadCallback(() => {
-                // Define the chart to be drawn.
-                var data = new google.visualization.DataTable();
-                data.addColumn('string', 'Element');
-                data.addColumn('number', 'Percentage');
-                data.addRows([
-                ['Completed', res[0]],
-                ['Pending', res[1]]
-                ]);
-
-                var options = {
-                    height: 500
-                };
-
-                // Instantiate and draw the chart.
-                var chart = new google.visualization.PieChart(this.shadowRoot.getElementById('pieChart'));
-                chart.draw(data, options);
-            });
+            google.charts.setOnLoadCallback(() => this.drawChart(res));
         });
     }
 
@@ -66,11 +49,15 @@ class PieChart extends HTMLElement {
           ['Completed', data[0]],
           ['Pending', data[1]]
         ]);
+
+        var options = {
+            height: 500
+        };
     
         // Instantiate and draw the chart.
         var chart = new google.visualization.PieChart(this.shadowRoot.getElementById('pieChart'));
         console.log(this.shadowRoot.getElementById('pieChart'));
-        chart.draw(data, null);
+        chart.draw(data, options);
     }
 
     setData(data) {
