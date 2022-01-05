@@ -5,7 +5,6 @@ template.innerHTML = `
         background-color: rgb(126, 126, 126);
         padding: 0.20%;
         border-radius: 5px;
-        height: 50%;
     }
     #pieChart {
         background-color: rgb(256, 256, 256);
@@ -49,9 +48,13 @@ class PieChart extends HTMLElement {
                 ['Pending', res[1]]
                 ]);
 
+                var options = {
+                    height: 500
+                };
+
                 // Instantiate and draw the chart.
                 var chart = new google.visualization.PieChart(this.shadowRoot.getElementById('pieChart'));
-                chart.draw(data, null);
+                chart.draw(data, options);
             });
         });
     }
