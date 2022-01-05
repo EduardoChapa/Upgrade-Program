@@ -57,14 +57,14 @@ class PieChart extends HTMLElement {
         });
     }
 
-    drawChart(res) {
+    drawChart(data) {
         // Define the chart to be drawn.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Element');
         data.addColumn('number', 'Percentage');
         data.addRows([
-          ['Completed', res[0]],
-          ['Pending', res[1]]
+          ['Completed', data[0]],
+          ['Pending', data[1]]
         ]);
     
         // Instantiate and draw the chart.
