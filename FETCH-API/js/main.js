@@ -3,6 +3,17 @@ document.getElementById('getJSON').addEventListener('click', getJSON);
 document.getElementById('getAPI').addEventListener('click', getAPI);
 document.getElementById('addPost').addEventListener('submit', postAPI);
 
+function callbackTest(num, callbackFunction) {
+    if (callbackFunction)
+        callbackFunction();
+    else
+        console.log("No callback function found");
+}
+
+function doSomething() {
+    console.log('Doing something');
+}
+
 function getText() {
     fetch('sample.txt')
     .then(function(res) {
