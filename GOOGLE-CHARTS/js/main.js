@@ -40,14 +40,14 @@ class PieChart extends HTMLElement {
         });
     }
 
-    drawChart(data) {
+    drawChart(res) {
         // Define the chart to be drawn.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Element');
         data.addColumn('number', 'Percentage');
         data.addRows([
-          ['Completed', data[0]],
-          ['Pending', data[1]]
+          ['Completed', res[0]],
+          ['Pending', res[1]]
         ]);
 
         var options = {
@@ -56,7 +56,6 @@ class PieChart extends HTMLElement {
     
         // Instantiate and draw the chart.
         var chart = new google.visualization.PieChart(this.shadowRoot.getElementById('pieChart'));
-        console.log(this.shadowRoot.getElementById('pieChart'));
         chart.draw(data, options);
     }
 
