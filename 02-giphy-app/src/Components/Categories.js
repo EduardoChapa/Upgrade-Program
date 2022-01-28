@@ -1,5 +1,5 @@
 import React from 'react';
-import GifGrid from '../Components/GifGrid';
+import GifGrid from './GifGrid';
 
 function Categories({ searchTerm }) {
 

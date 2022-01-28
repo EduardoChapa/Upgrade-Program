@@ -1,22 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import GridItem from './GridItem';
 import getGifs from '../helpers/getGifs';
+import useFetchGifs from '../hooks/useFetchGifs';
 
 function GifGrid({ searchTerm }) {
 
-    const [images, setImages] = useState([]);
-
-    useEffect(() => {
-        getGifs(searchTerm)
-        .then((gif) => {
-            setImages(gif);
-        });
-    }, [searchTerm]);
+    const {data: images, loading} = useFetchGifs(searchTerm);
 
     return(
-        <div id='container'>
+        <div id='grid-container'>
             <h3>{ searchTerm }</h3>
-                { images.map(gif => <GridItem key={ gif.id } gif={ gif }/>) }
+            {loading && <p>Loading...</p>}
+            { images.map(gif => <GridItem key={ gif.id } gif={ gif }/>) }
         </div>
     );
 }

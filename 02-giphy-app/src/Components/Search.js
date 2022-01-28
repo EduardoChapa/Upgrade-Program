@@ -6,7 +6,7 @@ function Search({ setSearchTerm }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (e.target.search.value)
-            setSearchTerm(categories => [e.target.search.value]);
+            setSearchTerm((categories) => [e.target.search.value]);
         else {
             const input = document.getElementById('search');
             input.style.borderColor = 'red';

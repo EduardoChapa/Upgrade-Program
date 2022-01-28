@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import Search from './Components/Search';
-import Categories from './Components/Categories';
+import Search from './components/Search';
+import Categories from './components/Categories';
 
 function GifApp() {
 
