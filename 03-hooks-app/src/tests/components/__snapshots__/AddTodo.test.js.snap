@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing AddTodo component should display correctly 1`] = `
+<div
+  className="col-5"
+>
+  <h4>
+    Add todo
+  </h4>
+  <hr />
+  <form>
+    <input
+      autoComplete="off"
+      name="description"
+      placeholder="Description..."
+      type="text"
+    />
+    <button
+      className="btn btn-outline-primary mt-1 btn-block"
+    >
+      Add
+    </button>
+  </form>
+</div>
+`;

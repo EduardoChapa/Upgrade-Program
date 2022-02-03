@@ -24,6 +24,13 @@ function useFetch(url) {
                     error: null
                 });
             }
+        })
+        .catch(() => {
+            setState({
+                data: null,
+                loading: null,
+                error: 'Something went wrong'
+            });
         });
     }, [url]);
     return state;

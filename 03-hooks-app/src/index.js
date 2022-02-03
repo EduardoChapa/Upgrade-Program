@@ -13,11 +13,12 @@ import reportWebVitals from './reportWebVitals';
 // import UseRefExample from './components/use-ref/UseRefExample';
 // import Layout from './components/useLayoutEffect/Layout';
 // import './components/use-reducer/intro-reducer';
-import Todos from './components/use-reducer/Todos';
+// import Todos from './components/use-reducer/Todos';
+import MainApp from './components/use-context/MainApp';
 
 
 ReactDOM.render(
-    <Todos />,
+    <MainApp />,
   document.getElementById('root')
 );
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function useForm(initialState = {}) {
+function useForm(initialState = { name: '', email: '' }) {
     const [values, setValues] = useState(initialState);
 
     const reset = () => {
