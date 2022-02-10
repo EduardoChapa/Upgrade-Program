@@ -3,7 +3,7 @@ import HeroList from '../hero/HeroList';
 
 function MarvelScreen() {
     return <div>
-        <h1>Marvel Screen!</h1>
+        <h1>Marvel!</h1>
         <hr/>
         <HeroList publisher={ 'Marvel Comics' }/>
     </div>;

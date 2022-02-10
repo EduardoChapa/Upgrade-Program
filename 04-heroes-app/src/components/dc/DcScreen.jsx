@@ -3,7 +3,7 @@ import HeroList from '../hero/HeroList';
 
 function DcScreen() {
     return <div>
-        <h1>DC Screen!</h1>
+        <h1>DC!</h1>
         <hr/>
         <HeroList publisher={ 'DC Comics' }/>
     </div>;

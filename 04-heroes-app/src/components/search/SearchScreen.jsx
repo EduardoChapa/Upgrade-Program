@@ -44,10 +44,12 @@ function SearchScreen() {
                 <hr/>
 
                 {
-                    (q === '') && 
+                    (q === '') ? 
                     <div className='alert alert-info'>
-                        Search for a hero
-                    </div>
+                        Search for a hero...
+                    </div> :
+                    (heroes.length === 0) &&
+                        <div className='alert alert-danger'>No heroes found</div>
                 }
 
                 {
