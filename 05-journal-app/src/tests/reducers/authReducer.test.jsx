@@ -20,10 +20,18 @@ describe('Testing authReducer', () => {
   });
   
   test('should logout correctly', () => {
-    const initialState = { }
+    const initialState = { };
     const action = { type: types.logout }
     const state = authReducer(initialState, action);
 
     expect(state).toEqual({ });
+  });
+  
+  test('state should not change', () => {
+    const initialState = { };
+    const action = { type: 'sasasasasa' }
+    const state = authReducer(initialState, action);
+
+    expect(state).toEqual(initialState);
   });
 });
