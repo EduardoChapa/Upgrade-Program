@@ -16,7 +16,7 @@ export async function fileUpload(file) {
     } else
       return null;
       // throw await resp.json();
-  } catch (error) {
-    throw error;
+  } catch (err) {
+    throw err;
   }
 }

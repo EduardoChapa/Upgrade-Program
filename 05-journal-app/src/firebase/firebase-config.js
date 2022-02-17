@@ -2,8 +2,6 @@ import firebase from "firebase/app";
 import 'firebase/firestore';
 import 'firebase/auth';
 
-console.log(process.env);
-
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_APIKEY,
   authDomain: process.env.REACT_APP_AUTHDOMAIN,
