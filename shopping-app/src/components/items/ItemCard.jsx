@@ -1,5 +1,4 @@
 import React from 'react'
-
 import cart from '../../assets/icons/add-to-cart.png';
 import fav from '../../assets/icons/add-to-fav.png';
 import star from '../../assets/icons/star.png';
@@ -30,9 +29,11 @@ function ItemCard({ title, image, rating, price }) {
         <img src={image} alt="" height={150} width={250}/>
       </div>
       <div className="item-card__body">
-        <h3>{ title }</h3>
-        <p><img src={ money } alt="Price" /> ${ price }</p>
-        <p><img src={ star } alt="Rating" /> <span>{ rating }</span></p>
+        <h5>{ title }</h5>
+        <div className="item-card__body-bottom">
+          <p><img src={ money } alt="Price" /> ${ price }</p>
+          <p><img src={ star } alt="Rating" /> <span>{ rating }</span></p>
+        </div>
       </div>
       <div className="item-card__buttons">
         <img className='pointer' src={ cart } alt="Add to cart" onClick={ handleAddToCart }/>

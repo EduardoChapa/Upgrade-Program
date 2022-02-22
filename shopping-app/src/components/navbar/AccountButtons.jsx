@@ -9,24 +9,25 @@ function AccountButtons() {
 
   const handleOrdersClick = (e) => {
     e.preventDefault();
-    navigate('profile');
+    navigate('account/orders');
     console.log('Orders clicked!');
   }
   
   const handleFavoritesClick = (e) => {
     e.preventDefault();
-    navigate('profile');
+    navigate('account/favorites');
     console.log('Favorites clicked!');
   }
   
   const handleCartClick = (e) => {
     e.preventDefault();
+    navigate('cart');
     console.log('Cart clicked!');
   }
 
   const handleProfileClick = (e) => {
     e.preventDefault();
-    navigate('profile');
+    navigate('account/details');
     console.log('Account clicked!');
   }
 

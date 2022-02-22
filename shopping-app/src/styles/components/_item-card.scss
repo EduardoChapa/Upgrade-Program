@@ -16,26 +16,29 @@
 .item-card__img {
   display: flex;
   justify-content: center;
-  height: 150px;
+  height: 125px;
   overflow: hidden;
 }
 
 .item-card__img img {
-  height: 175px;
+  height: 125px;
   width: auto;
 }
 
 .item-card__body {
-  height: 75px;
+  height: 100px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
 }
 
-.item-card__body h3 {
-  margin: 5px;
+.item-card__body h5 {
+  margin: 0;
 }
 
-.item-card__body p {
-  margin: 5px;
+.item-card__body-bottom p {
+  margin: 0;
 }
 
 .item-card__body img {
