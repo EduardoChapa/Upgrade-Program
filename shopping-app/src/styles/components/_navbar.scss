@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: small;
+}
+
+.navbar__toggle {
+  margin-right: 25px;
+}
+
+.navbar__toggle img{
+  margin: 0;
+  height: 30px;
+  width: 30px;
+}
+
+.navbar__search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.navbar__search input {
+  margin: 0;
+  padding: 5px;
+  width: 50%;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+
+  &:focus {
+    outline: none;
+  }
+}

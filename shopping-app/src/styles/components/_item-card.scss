@@ -1,0 +1,63 @@
+.item-card {
+  width: 225px;
+  height: 275px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+
+  transition: box-shadow ease 0.1s;
+
+  &:hover {
+    box-shadow: 0 0 10px 0px #888888
+  }
+}
+
+.item-card__img {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  overflow: hidden;
+}
+
+.item-card__img img {
+  height: 175px;
+  width: auto;
+}
+
+.item-card__body {
+  height: 75px;
+  padding: 5px;
+}
+
+.item-card__body h3 {
+  margin: 5px;
+}
+
+.item-card__body p {
+  margin: 5px;
+}
+
+.item-card__body img {
+  width: 15px;
+}
+
+.item-card__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.item-card__buttons img {
+  width: 35px;
+  height: 35px;
+  margin: 0 10px 10px 10px;
+
+  transition: all ease 0.1s;
+
+  &:hover {
+    width: 40px;
+    height: 40px;
+  }
+}

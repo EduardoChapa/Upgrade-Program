@@ -1,0 +1,18 @@
+.shopping-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// .shopping-app__side-menu {
+//   position: sticky;
+//   top: 55px;
+//   background-color: green;
+// }
+
+.shopping-app__navbar {
+  position: sticky;
+  top: 0;
+  align-self: stretch;
+}
