@@ -26,7 +26,7 @@ function ItemCard({ title, image, rating, price }) {
   return (
     <div className='item-card pointer' onClick={ handleClick }>
       <div className="item-card__img">
-        <img src={image} alt="" height={150} width={250}/>
+        <img src={image} alt={ title } />
       </div>
       <div className="item-card__body">
         <h5>{ title }</h5>

@@ -1,80 +1,21 @@
 import React from 'react';
+import useFetchProducts from '../../hooks/useFetchProucts';
 import ItemCard from './ItemCard';
 
 function ItemGrid() {
+
+  const [ products, loading ] = useFetchProducts('https://fakestoreapi.com/products');
+
   return (
     <div className="item-grid">
       <div className='item-grid__grid'>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
-        <ItemCard title='Jejeo' image='https://i.pinimg.com/564x/70/a4/61/70a4618c4d2b2f9c2fa2ed0d21acdc38.jpg' rating={5} price={ 50 }/>
+        {
+          loading ?
+          <p>Loading...</p> :
+          products.map(product => (
+            <ItemCard key={ product.id } title={ product.title } image={ product.image } rating={ product.rating.rate } price={ product.price }/>
+          ))
+        }
       </div>
       <div className="item-grid__nav-buttons">
 

@@ -6,7 +6,7 @@ function useFetchProducts(uri) {
   
   const initialState = {
     data: null,
-    loading: true,
+    loading: null,
     error: null
   };
   const [state, dispatch] = useReducer(productReducer, initialState);
@@ -17,7 +17,6 @@ function useFetchProducts(uri) {
     .then(resp => resp.json())
     .then(data => {
       dispatch({ type: types.productsFinishLoading, payload: data });
-      console.log(data);
     })
     .catch(() => {
       dispatch({ type: types.productsError });

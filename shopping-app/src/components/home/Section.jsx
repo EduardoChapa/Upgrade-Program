@@ -1,10 +1,7 @@
 import React from 'react';
 import ItemCard from '../items/ItemCard';
-
 import ArrowButton from '../buttons/ArrowButton';
 import useFetchProducts from '../../hooks/useFetchProucts';
-
-import lego from '../../assets/icons/LEGO.jpg';
 
 function Section({title}) {
 
@@ -18,9 +15,11 @@ function Section({title}) {
       <div className="section__item-list">
         {
           loading ?
-          <div>Loading...</div>
+          <p>Loading...</p>
           :
-          products.map(product => (<ItemCard title={ product.title } image={ product.image } rating={ product.rating.rate } price={ product.price }/>))
+          products.map(product => (
+            <ItemCard key={ product.id } title={ product.title } image={ product.image } rating={ product.rating.rate } price={ product.price }/>
+          ))
         }
         <ArrowButton />
       </div>
