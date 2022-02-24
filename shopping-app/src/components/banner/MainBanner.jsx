@@ -1,12 +1,12 @@
 import React from 'react';
 import useBannerSlider from '../../hooks/useBannerSlider';
-import useFetchProducts from '../../hooks/useFetchProucts';
+import useFetchAllProducts from '../../hooks/useFetchAllProucts';
 import ArrowButton from '../buttons/ArrowButton';
 import BannerItem from './BannerItem';
 
 function MainBanner() {
 
-  const [products, loading, error] = useFetchProducts('https://fakestoreapi.com/products');
+  const [products, loading, error] = useFetchAllProducts('https://fakestoreapi.com/products');
 
   const [ currentItem, nextItem, previousItem ] = useBannerSlider(products);
 

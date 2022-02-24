@@ -5,9 +5,8 @@ function productReducer(state, action) {
   switch (action.type) {
     case types.productsStartLoading:
       return {
-        data: null,
+        ...state,
         loading: true,
-        error: null
       };
     
     case types.productsFinishLoading:

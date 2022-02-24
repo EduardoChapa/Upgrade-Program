@@ -3,8 +3,11 @@ import cart from '../../assets/icons/add-to-cart.png';
 import fav from '../../assets/icons/add-to-fav.png';
 import star from '../../assets/icons/star.png';
 import money from '../../assets/icons/money.png';
+import { useNavigate } from 'react-router-dom';
 
-function ItemCard({ title, image, rating, price }) {
+function ItemCard({ id, title, image, rating, price }) {
+
+  const navigate = useNavigate();
 
   const handleAddToCart = (e) => {
     e.preventDefault();
@@ -20,7 +23,7 @@ function ItemCard({ title, image, rating, price }) {
 
   const handleClick = (e) => {
     e.preventDefault();
-    console.log('Item clicked!');
+    navigate(`/items/${id}`);
   }
 
   return (

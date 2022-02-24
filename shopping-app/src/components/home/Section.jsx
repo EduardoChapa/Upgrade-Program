@@ -1,11 +1,11 @@
 import React from 'react';
 import ItemCard from '../items/ItemCard';
 import ArrowButton from '../buttons/ArrowButton';
-import useFetchProducts from '../../hooks/useFetchProucts';
+import useFetchAllProducts from '../../hooks/useFetchAllProucts';
 
 function Section({title}) {
 
-  const [ products, loading ] = useFetchProducts('https://fakestoreapi.com/products?limit=5');
+  const [ products, loading ] = useFetchAllProducts('https://fakestoreapi.com/products?limit=5');
 
   return (
     <div className='section'>
@@ -18,7 +18,14 @@ function Section({title}) {
           <p>Loading...</p>
           :
           products.map(product => (
-            <ItemCard key={ product.id } title={ product.title } image={ product.image } rating={ product.rating.rate } price={ product.price }/>
+            <ItemCard
+              key={ product.id }
+              id={ product.id }
+              title={ product.title }
+              image={ product.image }
+              rating={ product.rating.rate }
+              price={ product.price }
+            />
           ))
         }
         <ArrowButton />
