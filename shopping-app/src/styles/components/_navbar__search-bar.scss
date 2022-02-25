@@ -1,0 +1,19 @@
+.navbar-search {
+  align-items: stretch;
+  display: flex;
+  justify-content: center;
+  width: 850px;
+}
+
+.navbar-search input {
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 5px;
+  width: 775px;
+
+  &:focus {
+    outline: none;
+  }
+}

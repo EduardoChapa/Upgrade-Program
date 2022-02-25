@@ -1,6 +1,7 @@
 import React from 'react'
-import MainBanner from '../banner/MainBanner';
-import Section from './Section';
+import MainBanner from '../ui/banner/MainBanner';
+
+import Section from '../ui/Section';
 
 function HomeScreen() {
   return (

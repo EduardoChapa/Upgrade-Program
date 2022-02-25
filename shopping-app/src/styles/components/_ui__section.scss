@@ -1,0 +1,26 @@
+.ui-section {
+  background-color: $background;
+  margin-bottom: 15px;
+}
+
+.ui-section-title h1 {
+  font-weight: 100;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.ui-section-body {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ui-section-body-list {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 285px;
+  justify-content: center;
+  width: 1175px;
+}

@@ -5,9 +5,9 @@ import logo from '../../assets/icons/logo.png';
 function Logo() {
 
   return (
-      <Link className='logo' to='/'>
+      <Link className='navbar-logo' to='/'>
         <img src={ logo } alt="Shopper Hunter"/>
-        <div className="logo__text">
+        <div className="navbar-logo-text">
           <p>Shopper</p>
           <p>Hunter</p>
         </div>

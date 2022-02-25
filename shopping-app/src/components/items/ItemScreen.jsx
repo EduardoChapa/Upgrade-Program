@@ -4,7 +4,7 @@ import useFetchProductsById from '../../hooks/useFetchProductsById';
 
 import cart from '../../assets/icons/add-to-cart.png';
 import fav from '../../assets/icons/add-to-fav.png';
-import Section from '../home/Section';
+import Section from '../ui/Section';
 
 function ItemScreen() {
 

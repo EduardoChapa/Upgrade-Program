@@ -1,21 +1,20 @@
-import React, { useState } from 'react'
-import AccountButtons from './AccountButtons';
-import Logo from './Logo';
-import NavButtons from './NavButtons';
-import SearchBar from './SearchBar';
-import SideMenuToggle from './SideMenuToggle';
+import React from 'react'
+import NavAccount from './NavAccount';
+import NavLogo from './NavLogo';
+import NavLinks from './NavLinks';
+import NavSearch from './NavSearch';
 
-function NavBar({ toggleSidemenu }) {
+function NavBar() {
 
   return (
     <div className="navbar">
-      <div className="navbar__top">
-        <Logo />
-        <SearchBar />
-        <AccountButtons name={'Ricardio'} />
+      <div className="navbar-top">
+        <NavLogo />
+        <NavSearch />
+        <NavAccount name={'Ricardio'} />
       </div>
-      <div className="navbar__bottom">
-        <NavButtons />
+      <div className="navbar-bottom">
+        <NavLinks />
       </div>
     </div>
   )

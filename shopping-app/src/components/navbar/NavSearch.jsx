@@ -1,7 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 function SearchBar() {
+
+  const navigate = useNavigate();
 
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -12,11 +14,12 @@ function SearchBar() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(`Searching ${searchTerm}!`);
+    navigate(`/items?q=${searchTerm}&type=search`);
+    setSearchTerm('');
   }
 
   return (
-    <form className='navbar__search' onSubmit={ handleSubmit }>
+    <form className='navbar-search' onSubmit={ handleSubmit }>
       <input type="text" placeholder='Search for an item...' value={ searchTerm } onChange={ handleInputChange }/>
     </form>
   )

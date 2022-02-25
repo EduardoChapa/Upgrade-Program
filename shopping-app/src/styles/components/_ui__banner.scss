@@ -1,0 +1,23 @@
+.ui-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ui-banner-item {
+  align-self: center;
+  border-radius: 5px;
+  display: flex;
+  height: 340px;
+  overflow: hidden;
+  width: 1600px;
+  justify-content: center;
+}
+
+.ui-banner-loading-container {
+  height: 340px;
+  width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

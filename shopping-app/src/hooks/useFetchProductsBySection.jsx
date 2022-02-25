@@ -2,7 +2,7 @@ import { useEffect, useReducer } from "react";
 import productReducer from "../reducers/productReducer";
 import types from "../types/types";
 
-function useFetchAllProducts() {
+function useFetchProductsBySection() {
   
   const initialState = {
     data: null,
@@ -13,7 +13,7 @@ function useFetchAllProducts() {
 
   useEffect(() => {
     dispatch({ type: types.productsStartLoading });
-    fetch('https://fakestoreapi.com/products')
+    fetch('https://fakestoreapi.com/products?limit=5')
     .then(resp => resp.json())
     .then(data => {
       dispatch({ type: types.productsFinishLoading, payload: data });
@@ -30,4 +30,4 @@ function useFetchAllProducts() {
   ];
 }
 
-export default useFetchAllProducts;
+export default useFetchProductsBySection;

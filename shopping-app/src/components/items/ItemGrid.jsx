@@ -7,11 +7,27 @@ function ItemGrid() {
 
   const [ params ] = useSearchParams();
   const q = params.get('q');
+  const type = params.get('type');
   const [ products, loading ] = useFetchAllProducts();
 
   return (
     <div className="item-grid">
-      <h1>{ q }</h1>
+      {
+        (type === 'search') &&
+        <h1>Results for { q }</h1>
+      }
+      {
+        (type === 'categories') &&
+        <h1>All categories</h1>
+      }
+      {
+        (type === 'newest') &&
+        <h1>New products!</h1>
+      }
+      {
+        (type === 'hotsales') &&
+        <h1>Hot sales!</h1>
+      }
       <div className='item-grid__grid'>
         {
           loading ?

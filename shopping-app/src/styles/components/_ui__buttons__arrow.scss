@@ -1,14 +1,5 @@
-.section {
-  background-color: $background;
-  margin-bottom: 15px;
-}
-
-.section h1 {
-  margin-bottom: 0;
-  margin-left: 15px;
-}
-
-.section__arrow {
+.ui-button-arrow {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -25,12 +16,7 @@
   }
 }
 
-.section__arrow img {
+.ui-button-arrow img {
   width: 37px;
   height: 30px;
-}
-
-.section__item-list {
-  display: flex;
-  flex-direction: row;
 }

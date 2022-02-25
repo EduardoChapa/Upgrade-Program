@@ -3,15 +3,31 @@
 @import './settings/base';
 
 // Components
+
+// App
 @import './components/shoppingapp';
-@import './components/homescreen';
-@import './components/sidemenu';
+
+// NavBar
 @import './components/navbar';
-@import './components/section';
+@import './components/navbar__logo';
+@import './components/navbar__search-bar';
+@import './components/navbar__nav-links';
+@import './components/navbar__account-links';
+
+// Home
+@import './components/homescreen';
+// @import './components/sidemenu';
+
+// UI
+@import './components/ui__banner';
+@import './components/ui__section';
+@import './components/ui__buttons__arrow';
+@import './components/ui__loading';
+
+// Footer
+@import './components/footer';
+
+
 @import './components/item-card';
 @import './components/item-grid';
 @import './components/item-screen';
-@import './components/account-buttons';
-@import './components/logo';
-@import './components/banner';
-@import './components/search-bar';
